@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">    
+    <title>Plunderlings</title>
+</head>
+<body>
+    
+    <header>
+           <div class="contenedor_header">
+                <div class="btnplay">
+                    <label class="switch" id="switch">
+                        <input type="checkbox" id="interruptor" checked>
+                        <span class="slider round"></span>
+                      </label>
+                </div>
+                <div class="contenedor_img"><img src="../img/logo.png" alt="Logo"></div>
+                <div class="contenedor_redes">
+                    <div class="ig redes"><a href="https://www.instagram.com/plunderlings/"><img src="../img/instagram.png" alt="instagram"></a></div>
+                    <div class="fb redes"><a href="http://facebook.com/plunderlings"><img src="../img/facebook.png" alt="facebook"></a></div>
+                    <div class="twt redes"><a href="https://twitter.com/plunderlings"><img src="../img/tw.png" alt="twitter"></a></div>
+                </div>
+            </div> 
+    </header>
+
+    <main>
+        
+        
+        <aside>
+            <div class="circle">
+               
+            </div>
+            <button class="btn btn1">boton1</button>
+            <button class="btn btn4">boton4</button>
+            <button class="btn btn2">boton2</button>
+            <button class="btn btn3">boton3</button>
+        </aside>
+        <section class="inicio">
+            <div class="contenedor_flechas puntos">
+                <a class="flecha" href="#"><span class="punto arrow left seleccionado"></span></a>
+                <a class="flecha" href="#"><span class="punto arrow right"></span></a>
+            </div>
+            <div class="contenedor_tituloMenu"><p>NEWS!</p></div>
+            <!-- ----------------NEWS 1------------------- -->
+            <div class="menu__contenedor-grande ">
+                <div class="contenedor__grande-imgs">
+                    <div class="contenedor_inicio">
+                    
+                        <div class="contenedor_inicio_img">
+                            <img src="../img/index.png" alt=""> 
+                        </div>
+                        <div class="contenedor_h3_img">   
+                            
+                            <div class="contenedor_h3_titulos">
+                            <div class="titulo1">
+                                <p>Plunderlings + Plunderstrong </p>
+                            </div> 
+                            <div class="contenedor_subtitulos">
+                                <p>#plunderlings </p>
+                                <p>#plunderstrong</p>
+                                <p>#nyc2023</p>
+                            </div> 
+                            </div>
+                            
+                        </div>
+                    
+                    </div> 
+                </div>
+        <!-- ----------------NEWS 1------------------- -->
+                <div class="contenedor__grande-imgs">
+                    <div class="contenedor_inicio">
+                    
+                        <div class="contenedor_inicio_img">
+                            <img src="../img/index.png" alt=""> 
+                        </div>
+                        <div class="contenedor_h3_img">   
+                            
+                            <div class="contenedor_h3_titulos">
+                            <div class="titulo1">
+                                <p>Plunderlings + Plunderstrong </p>
+                            </div> 
+                            <div class="contenedor_subtitulos">
+                                <p>#plunderlings </p>
+                                <p>#plunderstrong</p>
+                                <p>#nyc2023</p>
+                            </div> 
+                            </div>
+                            
+                        </div>
+                    
+                    </div> 
+                </div>
+            <!-- ----------------NEWS 1------------------- -->
+            <div class="contenedor__grande-imgs">
+                <div class="contenedor_inicio">
+                
+                    <div class="contenedor_inicio_img">
+                        <img src="../img/index.png" alt=""> 
+                    </div>
+                    <div class="contenedor_h3_img">   
+                        
+                        <div class="contenedor_h3_titulos">
+                        <div class="titulo1">
+                            <p>Plunderlings + Plunderstrong </p>
+                        </div> 
+                        <div class="contenedor_subtitulos">
+                            <p>#plunderlings </p>
+                            <p>#plunderstrong</p>
+                            <p>#nyc2023</p>
+                        </div> 
+                        </div>
+                        
+                    </div>
+                
+                </div> 
+            </div>
+            <!-- ----------------NEWS 1------------------- -->
+            <div class="contenedor__grande-imgs">
+                <div class="contenedor_inicio">
+                
+                    <div class="contenedor_inicio_img">
+                        <img src="../img/index.png" alt=""> 
+                    </div>
+                    <div class="contenedor_h3_img">   
+                        
+                        <div class="contenedor_h3_titulos">
+                        <div class="titulo1">
+                            <p>Plunderlings + Plunderstrong </p>
+                        </div> 
+                        <div class="contenedor_subtitulos">
+                            <p>#plunderlings </p>
+                            <p>#plunderstrong</p>
+                            <p>#nyc2023</p>
+                        </div> 
+                        </div>
+                        
+                    </div>
+                
+                </div> 
+            </div>
+            <!-- ----------------NEWS 1------------------- -->
+         </div>
+                
+            <div class="contenedor_tituloMenu2"><p>NEWS!</p></div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <video muted autoplay id="background-video">
+        <source src="../img/video.mp4" type="video/mp4">
+    </video>
+    
+    <div class="capa"></div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        let video = document.getElementById('background-video');
+
+            function loopVideo() {
+            video.currentTime = 0;
+            video.play();
+            }
+
+            video.addEventListener('ended', loopVideo);
+            loopVideo();
+
+
+        let pausaBtn = document.getElementById('switch');
+        document.getElementById('interruptor').addEventListener('change', function() {
+            // Aquí puedes agregar acciones personalizadas cuando el interruptor cambia de estado
+            if (this.checked) {
+                video.play();
+            } else {
+                video.pause();
+                // El interruptor está desactivado
+            }
+            });
+            // pausaBtn.addEventListener('click', function() {
+            // if (video.paused) {
+            //     video.play(); // Si el video está pausado, lo reanuda
+                
+            // } else {
+            //     video.pause(); // Si el video está reproduciéndose, lo pausa
+                
+            // }
+            // });
+    });
+</script>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/index.js"></script>
+</html>
