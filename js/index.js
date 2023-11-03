@@ -54,7 +54,7 @@ const grande = document.querySelector('.menu__contenedor-grande');
 				});
 
 const controlador_vertical = document.querySelector('.controlador_vertical');
-const botones = document.querySelectorAll('.btn');
+const botones = document.querySelectorAll('.losh1');
 let cont=0;
 
 				botones[0].addEventListener('click', ()=>{
