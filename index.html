@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/pauseplay.css">
+    <link rel="stylesheet" href="css/section_imagenes.css">
+
     <script src="https://kit.fontawesome.com/42dbfd4b42.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,54 +20,38 @@
     <header>
            <div class="contenedor_header">
                 <div class="btnplay">
-                    <label class="switch" id="switch">
-                        <input type="checkbox" id="interruptor" checked>
-                        <span class="slider round"></span>
-                      </label>
+                    <div class="switch">
+                        <div class="circle">
+                            <i class="fa-solid fa-pause" style="color: #ffffff;"></i>
+                        </div>
+                    </div>	
                 </div>
+                
                 <div class="contenedor_img"><img src="img/logo.png" alt="Logo"></div>
-                <div class="contenedor_redes">
-                    <div class="ig redes"><a href="https://www.instagram.com/plunderlings/"><img src="img/instagram.png" alt="instagram"></a></div>
-                    <div class="fb redes"><a href="http://facebook.com/plunderlings"><img src="img/facebook.png" alt="facebook"></a></div>
-                    <div class="twt redes"><a href="https://twitter.com/plunderlings"><img src="img/tw.png" alt="twitter"></a></div>
-                </div>
+                
+                    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+  	                <label for="menu-icon"></label>
+                    <nav class="nav"> 		
+                        <ul class="pt-5">
+                            <li class="losh1"><a href="#">News</a></li>
+                            <li class="losh1"><a href="#">Pictures</a></li>
+                            <li class="losh1"><a href="#">Shop</a></li>
+                            <li class="losh1"><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                
             </div> 
     </header>
 
     <main>
         
         
-        <aside>
-            <!-- <div class="circle">
-               
-            </div>
-            <div class="botones">
-            <button class="btn btn1">boton1</button>
-            <button class="btn btn4">boton4</button>
-            <button class="btn btn2">boton2</button>
-            <button class="btn btn3">boton3</button>
-            </div> -->
-            <ul id="navi">
-                <li class="nav-link">
-                    <h1 class="losh1" data-name="news">news</h1>
-                </li>
-                <li  class="nav-link">
-                    <h1 class="losh1" data-name="Shop">Shop</h1>
-                </li>
-                <li class="nav-link">
-                    <h1 class="losh1" data-name="Faq">Faq</h1>
-                </li>
-                <li class="nav-link">
-                    <h1 class="losh1" data-name="contact">contact</h1>
-                </li>
-            </ul>
-            
-        </aside>
+       
         <aside class="_social-links">
             <ul class="_links-list">
-                <li class="_social-link"><a href="https://twitter.com/ggsingla" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                <li class="_social-link"><a href="https://github.com/ggsingla" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                <li class="_social-link"><a href="mailto:ggsingla777@gmail.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="_social-link"><a href="https://twitter.com/plunderlings" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="_social-link"><a href="http://facebook.com/plunderlings" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="_social-link"><a href="https://www.instagram.com/plunderlings/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
             
         </aside>
@@ -175,10 +163,47 @@
                 <!-- ----------------NEWS 1------------------- -->
              </div>
                     
-                <div class="contenedor_tituloMenu2"><p>NEWS!</p></div>
+                
             </section>
             <section class="imagenes">
-                <p>imagenes</p>
+                
+	
+<div class="contenedor_section-img">
+
+
+	<div class="section_img ">
+		<div class="container">
+			<div class="row full-height justify-content-center">
+				<div class="col-lg-10 col-xl-8 align-self-center padding-tb">
+					<div class=" mx-auto text-center slider-height-padding">
+			          	<input class="checkbox frst" type="radio" id="slide-1" name="slider" checked/>
+			          	<label for="slide-1"></label>
+			          	<input class="checkbox scnd" type="radio" name="slider" id="slider-2"/>
+			          	<label for="slider-2"></label>
+			          	<input class="checkbox thrd" type="radio" name="slider" id="slider-3"/>
+			          	<label for="slider-3"></label>
+			          	<input class="checkbox foth" type="radio" name="slider" id="slider-4"/>
+			          	<label for="slider-4"></label>
+						<ul class="ul_titles">
+							<li>
+								<span>MALE GOOFY FACE</span>
+						    </li>
+							<li>
+								<span>TOY PIG</span>
+						    </li>
+							<li>
+								<span>SHY PORTRAIT</span>
+						    </li>
+							<li>
+								<span>SKATEBOARD FACE</span>
+						    </li>
+					    </ul>
+				    </div>
+			    </div>
+	      	</div>
+	    </div>
+	</div>
+</div>
             </section>
             <section class="info">
                 <p>info</p>
@@ -213,25 +238,27 @@
             loopVideo();
 
 
-        let pausaBtn = document.getElementById('switch');
-        document.getElementById('interruptor').addEventListener('change', function() {
-            // Aquí puedes agregar acciones personalizadas cuando el interruptor cambia de estado
-            if (this.checked) {
-                video.play();
-            } else {
-                video.pause();
-                // El interruptor está desactivado
-            }
-            });
-            // pausaBtn.addEventListener('click', function() {
-            // if (video.paused) {
-            //     video.play(); // Si el video está pausado, lo reanuda
-                
-            // } else {
-            //     video.pause(); // Si el video está reproduciéndose, lo pausa
-                
-            // }
-            // });
+
+            $(".switch").on('click', function () {
+                if ($(".switch").hasClass("switched")) {
+                    
+                    $(".switch").removeClass("switched");
+                    $(".switch").addClass("cambio");
+                    
+                        $(".fa-solid").removeClass("fa-play");
+                        $(".fa-solid").addClass("fa-pause");
+                        video.pause();
+                }
+                else {
+                    
+                    $(".switch").addClass("switched");
+                    $(".switch").removeClass("cambio");
+                    $(".fa-solid").removeClass("fa-pause");
+                        $(".fa-solid").addClass("fa-play");
+                        video.play();
+
+                }
+	        });
     });
 </script>
 <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
