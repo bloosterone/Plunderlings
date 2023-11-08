@@ -280,13 +280,13 @@ section{
 
 .contenedor_tituloMenu p{
     text-align: center;
-    letter-spacing: 0.10em;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 8vh;
-    text-transform: uppercase;
-    line-height: 1.2;
-    font-weight: 800;
-  color: #ececee;
+  letter-spacing: 0.10em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5vh;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 800;
+color: #ececee;
     
 }
 .menu__contenedor-grande{
@@ -414,7 +414,7 @@ section{
 	&.left {
 		&::after {
 			left: calc( var(--arrow-size) / 5 );
-			border-left: calc( var(--arrow-size) / 5 ) solid var(--arrow-color);
+			border-left: calc( var(--arrow-size) / 5 ) solid #ed1c5b;
 			transform-origin: top left;
 			rotate: -45deg;
 		}
@@ -427,7 +427,7 @@ section{
 	&.right {
 		&::after {
 			right: calc( var(--arrow-size) / 5 );
-			border-right: calc( var(--arrow-size) / 5 ) solid var(--arrow-color);
+			border-right: calc( var(--arrow-size) / 5 ) solid #ed1c5b;
 			transform-origin: top right;
 			rotate: 45deg;
 		}
@@ -459,3 +459,4 @@ a {
 		}
 	}
 }
+
