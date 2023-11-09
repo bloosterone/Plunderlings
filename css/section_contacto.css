@@ -1,0 +1,172 @@
+.contenedor_section-contacto{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.contenedor_form{
+    width: 70%;
+    max-width: 730px;
+    height: 60%;
+    background-color: #1f2029;
+    border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+    display: flex;
+    flex-direction: row;
+}
+.mitad{
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+}
+.mitadB{
+    border-left: 1px solid #ccc;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: auto;
+}
+.form-title{
+    width: 90%;
+    height: 20%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form-title h1{
+    font-family: 'Pacifico', cursive;
+		color: #fff;
+		font-size: 2rem;
+}
+.form-group{
+    width: 90%;
+    height: 20%;
+    /* outline: 3px solid green; */
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+    background-color: #f2f6f8;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-left: 10px;
+    margin-top: 20px;
+    
+}
+#formName{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #212529;
+    font-size: 1.1rem;
+    width: 80%;
+    background-color: #f2f6f8;
+    color: #838788;
+    border: none;
+    position: relative;
+    left: 10px;
+}
+#formName::placeholder {
+    font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+    font-size: 1.1rem;
+    color: #838788;
+    position: relative;
+    
+  }
+  #formName:focus{
+    outline: none;
+    border: none;
+    
+}
+.d-block{
+    width: 10%;
+    color: #57565c;
+}
+.message{
+    height: 30%;
+    padding: 10px;
+    border-radius: 1rem;
+}
+#formMessage{
+width: 100%;
+border-radius: 1rem;
+height: 100%;
+
+background-color: #f2f6f8;
+    color: #838788;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    border: none;
+    resize: none;
+}
+#formMessage::placeholder {
+    font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+    font-size: 1.1rem;
+    color: #838788;
+    position: relative;
+    top: -10;
+    
+  }
+  #formMessage:focus {
+    outline: none;
+    border: none;
+    
+  }
+ .form_button{
+    margin-top: 10%;
+ }
+
+ 
+ .about_title{
+    width: 90%;
+    height: 20%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.about_title h1{
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+		font-size: 1.5rem;
+}
+.about_subtitle{
+    width: 90%;
+    height: 80%;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.about_subtitle p{
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: .6em;
+  color: #ccc;
+
+}

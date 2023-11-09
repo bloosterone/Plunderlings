@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="css/pauseplay.css">
     <link rel="stylesheet" href="css/section_imagenes.css">
     <link rel="stylesheet" href="css/section_faq.css">
+    <link rel="stylesheet" href="css/section_contacto.css">
 
     <script src="https://kit.fontawesome.com/42dbfd4b42.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">    
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">   
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">  
     <title>Plunderlings</title>
 </head>
 <body>
@@ -259,7 +261,45 @@
                 </div>
             </section>
             <section class="contacto">
-                <p>contacto</p>
+                <div class="contenedor_tituloMenu2"><p>Contact</p></div>
+                <div class="contenedor_section-contacto">
+                    
+                    <div class="contenedor_form">
+                        <div class="mitad mitadA">
+                            <div class="about_title"><h1>About</h1></div>
+                            <div class="about_subtitle">
+                                <p>Plunderlings aims to present a fresh take on fantasy universes from a Caribbean perspective. A place where the “monsters” are pirate adventurers with emotions, hopes and dreams of their own. Plunderlings will continue expand this new world to incorporate new creatures inspired from island animals, legends and history.</p>
+                                <p>Lone Coconut is based in the Dominican Republic. ​ </p>
+                                <p>For inquiries contact us @ plunderlings@gmail.com Plunderlings © 2018 by Lone Coconut</p>
+                            </div>
+                        </div>
+                        <div class="mitad mitadB">
+                            <div class="form-title">
+                                <h1>Talk to Us</h1>
+                            </div>
+                            <form action="procesar_formulario.php" method="post" id="miFormulario">
+                            <div class="form-group">
+                                <label for="formName" class="d-block">
+                                    <i class="fa-regular fa-user icon"></i>
+                                </label>
+                                <input type="text" id="formName" class="inputs" placeholder="Name" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formName" class="d-block">
+                                    <i class="fa-regular fa-envelope icon"></i>
+                                </label>
+                                <input type="text" id="formName" class="inputs" placeholder="E-mail" name="mensaje" required>
+                            </div>
+                            <div class="form-group message">
+                                <textarea id="formMessage"  placeholder="Message"name="mensaje" required></textarea>
+                            </div>
+                            <div class="form_button">
+                                <button id="btn_form" class="button-49" role="button">Send Message</button>
+                              </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
         

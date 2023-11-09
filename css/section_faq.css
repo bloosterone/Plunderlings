@@ -16,7 +16,7 @@
     /* background: linear-gradient(180deg, rgba(249,249,255,1) 0%, rgba(40,40,40,1) 100%);  */
     border-radius: 40px;
 /* Shadow 2 */
-box-shadow: 0px 8.09489px 59.97015px 0px rgba(0, 0, 0, 0.13), 0px 14.42896px 93.37154px 0px rgba(0, 0, 0, 0.19), 0px 20.2017px 102.74529px 0px rgba(0, 0, 0, 0.21), 0px 28.79736px 103.55659px 0px rgba(0, 0, 0, 0.20), 0px 57px 184px 0px rgba(0, 0, 0, 0.50);
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
  }
  .contenedor_faq-img{
     width: 100%;
