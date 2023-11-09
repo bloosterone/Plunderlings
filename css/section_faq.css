@@ -8,6 +8,7 @@
  }
  .contenedor_faq{
     width: 50%;
+    min-width: 410px;
     height: 80%;
     outline: 1px solid black;
     display: flex;

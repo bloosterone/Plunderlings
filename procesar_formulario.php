@@ -1,4 +1,7 @@
+
 <?php
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recoger datos del formulario
     $nombre = $_POST["nombre"];
@@ -19,12 +22,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Puedes añadir más cabeceras según tus necesidades
 
-    mail($to, $subject, $message, $headers);
+    $resend = Resend::client('re_goP6uK6a_9fZ7HXBJEN3ghEGjpzfHeoDv');
 
-    // Redireccionar o mostrar un mensaje de éxito
-    header("Location: gracias.html");
-} else {
-    // Si se accede directamente a este script sin enviar el formulario, redirigir a la página de contacto
-    header("Location: contacto.html");
-}
+    $resend->emails->send([
+  'from' => 'onboarding@resend.dev',
+  'to' => 'bloosterone@gmail.com',
+  'subject' => $subject,
+  'html' => $message
+    ]);
+    } 
 ?>

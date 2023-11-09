@@ -1,3 +1,12 @@
+const formbtn = document.getElementById("btn_form");
+
+formbtn.addEventListener('click',()=>{
+	document.getElementById("miFormulario").submit();
+});
+
+
+
+
 const grande = document.querySelector('.menu__contenedor-grande');
 	const puntos = document.querySelectorAll('.punto');
 	
@@ -105,3 +114,4 @@ let cont=0;
 					controlador_vertical.style.transform=` translateY(${cont}%)`;
 
 				});
+

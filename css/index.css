@@ -309,7 +309,7 @@ color: #ececee;
 .contenedor__grande-imgs{
     width: calc(400% / 4);
     display: flex;
-   
+   min-width: 347px;
     justify-content: space-around;
     margin-left: 02%;
     margin-right: 02%;
@@ -317,7 +317,8 @@ color: #ececee;
 }   
 .contenedor_inicio{
     
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     
     /* outline: 1px dashed black; */
     height: 90%;
