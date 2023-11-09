@@ -89,7 +89,7 @@ video{
   }
 header{
     width: 100%;
-    overflow: hidden;
+   
     height: 20%;
     /* border: 1px solid black; */
     display: flex;
