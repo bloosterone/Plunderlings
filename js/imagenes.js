@@ -20,7 +20,7 @@ function handleClick(event, index) {
 	const clickedElement = event.target;
 	// const backgroundImageURL = window.getComputedStyle(clickedElement).getPropertyValue('background-image');
 	// const cleanURL = backgroundImageURL.replace('url("', '').replace('")', '');
-	const url = '../bd.json';
+	const url = 'https://raw.githubusercontent.com/bloosterone/Plunderlings/main/bd.json';
 	fetch(url)
 	.then(response => {
 	  if (!response.ok) {
