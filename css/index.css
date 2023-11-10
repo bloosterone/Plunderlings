@@ -464,3 +464,19 @@ a {
 	}
 }
 
+@media screen and (max-width: 816px) {
+    .contenedor_img{
+        width: 50%;
+        
+        /* border: 1px dashed red; */
+    }
+    .btnplay{
+        width: 15%;
+        
+        
+    }
+    .circle {
+        width: 30px;
+	height: 30px;
+    }
+  }

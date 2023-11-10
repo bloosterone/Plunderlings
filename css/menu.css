@@ -227,7 +227,7 @@
   
   
   
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 816px) {
     .menu-icon:checked + label,
     .menu-icon:not(:checked) + label{
       right: 55px;
@@ -242,4 +242,17 @@
     .nav ul li a{
       font-size: 8vh;
     }
+    .nav{
+      width: 60px;
+    height: 60px;
+    top: 33px;
+    right:20px;
+    }
+    .menu-icon:checked + label,
+  .menu-icon:not(:checked) + label{
+    
+    top: 53px;
+    right: 35px;
+    
+  }
   }
