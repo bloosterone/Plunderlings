@@ -479,4 +479,31 @@ a {
         width: 30px;
 	height: 30px;
     }
+    ._social-links {
+        
+        transform: translatey(-50%);
+        padding: .5em 0.2em .5em .5em;
+       
+        border-radius: 0.5em 0 0 0.5em;
+        box-shadow: -4px 0px 0px #ed1c5b;
+        
+    }
+    ._links-list {
+       
+        gap: .4em;
+    }
+    ._social-links:hover {
+        box-shadow: -8px 0px 20px #ed1c5b;
+        padding: .5em;
+    }
+    ._social-link a {
+        color: #111;
+        font-size: 1.3rem;
+        transition: all 200ms ease;
+    }
+    ._social-link a:hover {
+        color: #ed1c5b;
+        font-size: 1.5rem;
+    }
+    
   }
