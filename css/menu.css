@@ -11,7 +11,7 @@
   .menu-icon:checked + label,
   .menu-icon:not(:checked) + label{
     position: fixed;
-    top: 63px;
+    top: 10%;
     right: 75px;
     display: block;
     width: 30px;
@@ -81,7 +81,7 @@
   
   .nav{
     position: fixed;
-    top: 33px;
+    top: 7%;
     right: 50px;
     display: block;
     width: 80px;
@@ -167,7 +167,7 @@
   }
   .nav ul li a{
     font-family: 'Montserrat', sans-serif;
-    font-size: 9vh;
+    font-size: 8vh;
     text-transform: uppercase;
     line-height: 1.2;
     font-weight: 800;
@@ -240,19 +240,30 @@
     }
     
     .nav ul li a{
-      font-size: 8vh;
+      font-size: 5vh;
     }
     .nav{
       width: 60px;
     height: 60px;
-    top: 33px;
-    right:20px;
+    /* top: 33px;
+    right:10px; */
     }
     .menu-icon:checked + label,
   .menu-icon:not(:checked) + label{
     
-    top: 53px;
-    right: 35px;
+    top: 9%;
+  
+    right: 45px;
     
   }
   }
+  @media screen and (min-height: 1000px) {
+    .menu-icon:checked + label,
+    .menu-icon:not(:checked) + label{
+      
+       top: 8.5%;
+      
+      
+    }
+  }
+  
