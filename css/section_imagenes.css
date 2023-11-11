@@ -254,35 +254,47 @@ box-sizing: border-box;
   }
 }
  
- 
+ .section__container-menu2{
+  margin-top: 20px;
+  width: 100%;
+  max-width: 750px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  outline: 2px solid green;
+ }
  
  .section__container-menu{
-  width: calc(100%);
+  width: 80%;
+  
   min-width: 320px;
   height: 100px;
   outline: 1px solid red;
-  margin-top: 30px;
-  margin-left: 10%;
-  margin-right: 10%;
+  
+  
    overflow: hidden;
    z-index: 09;
-
  }
  .flecha_izquierda{
   width: 10%;
   outline: 1px solid red;
-  position: absolute;
-  left:-10%;
-  margin-left: 20px;
+  position: relative;
+  left:0;
+  
+  
   
  
  }
  .flecha_derecha{
   width: 10%;
   outline: 1px solid red;
-  position: absolute; 
-  right:-10%;
-  margin-right: 20px;
+  position: relative; 
+  right:0;
+  
+  
 
  }
  .arrow_imgs {
@@ -516,6 +528,9 @@ a {
   height: 55%;
   max-width: 75px;
    }
+   .arrow_imgs{
+    --arrow-size: 2em;
+    }
 }
 @media screen and (max-width: 562px) {
 
