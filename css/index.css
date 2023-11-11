@@ -308,10 +308,8 @@ color: #ececee;
     justify-content: center;
   height: 80%;
     transition: transform 1s ease-in-out;
-    -webkit-transition: -webkit-transform 1s ease-in-out; /* Para Safari y Chrome antiguos */
--moz-transition: -moz-transform 1s ease-in-out;       /* Para Firefox antiguos */
--ms-transition: -ms-transform 1s ease-in-out;         /* Para Internet Explorer */
--o-transition: -o-transform 1s ease-in-out;  
+    -webkit-transition: transform 1s ease-in-out;
+    -moz-transition: transform 1s ease-in-out;
     position: absolute;
     left: 0;
 }
@@ -393,7 +391,8 @@ color: #ececee;
 }
 /* -------------------flechas------------ */
 .contenedor_flechas{
-    width: 700px;
+    width: calc(100%)   ;
+    max-width: 700px;
     height: 60px;
     
     position:absolute;
@@ -489,10 +488,10 @@ a {
 	height: 30px;
     }
     ._social-links {
-        
+        top: 34%;
         transform: translatey(-50%);
         padding: .5em 0.2em .5em .5em;
-       
+        
         border-radius: 0.5em 0 0 0.5em;
         box-shadow: -4px 0px 0px #ed1c5b;
         
@@ -512,5 +511,11 @@ a {
     ._social-link a:hover {
         font-size: 1.5rem;
     }
-    
+    .arrow {
+        --arrow-size: 2em;
+       
+    }
+    .contenedor_flechas{
+        width: 90%;
+    }
   }
