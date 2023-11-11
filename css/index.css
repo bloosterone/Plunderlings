@@ -316,10 +316,10 @@ color: #ececee;
 .contenedor__grande-imgs{
     width: calc(400% / 4);
     display: flex;
-   min-width: 200px;
+   min-width: 237px;
     justify-content: space-around;
-    margin-left: 05%;
-    margin-right: 05%;
+    margin-left: 04%;
+    margin-right: 04%;
     
 }   
 .contenedor_inicio{
@@ -517,5 +517,13 @@ a {
     }
     .contenedor_flechas{
         width: 90%;
+    }
+    .titulo1 p{
+        
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .contenedor_subtitulos p{
+        font-size: 15px;
     }
   }
