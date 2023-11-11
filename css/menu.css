@@ -241,14 +241,75 @@
   height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   @keyframes border-transform{
-      0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
-    14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
-    28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
-    42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
-    56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
-    70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
-    84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+      0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+        -webkit-border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+        -moz-border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+    14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; 
+      -webkit-border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+      -moz-border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;} 
+    28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; 
+      -webkit-border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+      -moz-border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+    42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; 
+      -webkit-border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+      -moz-border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;} 
+    56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; 
+      -webkit-border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+      -moz-border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;} 
+    70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+      -webkit-border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+      -moz-border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+    84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; 
+      -webkit-border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+      -moz-border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;} 
   }
+  @-webkit-keyframes tuAnimacion {
+    0%,100% { 
+      -webkit-border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+      } 
+    14% {
+      -webkit-border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+    }
+    28% {
+      -webkit-border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+    }
+    42% {
+      -webkit-border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+    }
+    56% {
+      -webkit-border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+    }
+    70% {
+      -webkit-border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+    }
+    84% {
+      -webkit-border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+    }
+  }
+  
+  @-moz-keyframes tuAnimacion {
+    0%,100% { 
+      -moz-border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+    14% {
+      -moz-border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+    }
+    28% {
+      -moz-border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+    }
+    42% {
+      -moz-border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+    }
+    56% {
+      -moz-border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+    }
+    70% {
+      -moz-border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+    }
+    84% {
+      -moz-border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+    }
+  }
+  
   
   .menu-icon:checked ~ .nav {
     animation-play-state: paused;
@@ -337,15 +398,31 @@
   }
   .nav ul li:nth-child(1){
     transition-delay: 200ms;
+    -webkit-transition-delay: 200ms; /* Para Safari y Chrome antiguos */
+-moz-transition-delay: 200ms;    /* Para Firefox antiguos */
+-ms-transition-delay: 200ms;     /* Para Internet Explorer */
+-o-transition-delay: 200ms;  
   }
   .nav ul li:nth-child(2){
     transition-delay: 150ms;
+    -webkit-transition-delay: 150ms; /* Para Safari y Chrome antiguos */
+    -moz-transition-delay: 150ms;    /* Para Firefox antiguos */
+    -ms-transition-delay: 150ms;     /* Para Internet Explorer */
+    -o-transition-delay: 150ms;  
   }
   .nav ul li:nth-child(3){
     transition-delay: 100ms;
+    -webkit-transition-delay: 100ms; /* Para Safari y Chrome antiguos */
+    -moz-transition-delay: 100ms;    /* Para Firefox antiguos */
+    -ms-transition-delay: 100ms;     /* Para Internet Explorer */
+    -o-transition-delay: 100ms;  
   }
   .nav ul li:nth-child(4){
     transition-delay: 50ms;
+    -webkit-transition-delay: 50ms; /* Para Safari y Chrome antiguos */
+    -moz-transition-delay: 50ms;    /* Para Firefox antiguos */
+    -ms-transition-delay: 50ms;     /* Para Internet Explorer */
+    -o-transition-delay: 50ms;  
   }
   .nav ul li a{
     font-family: 'Montserrat', sans-serif;
@@ -410,15 +487,31 @@
   }
   .menu-icon:checked ~ .nav ul li:nth-child(1){
     transition-delay: 1400ms;
+    -webkit-transition-delay: 1400ms; /* Para Safari y Chrome antiguos */
+-moz-transition-delay: 1400ms;    /* Para Firefox antiguos */
+-ms-transition-delay: 1400ms;     /* Para Internet Explorer */
+-o-transition-delay: 1400ms;  
   }
   .menu-icon:checked ~ .nav ul li:nth-child(2){
     transition-delay: 1480ms;
+    -webkit-transition-delay: 1480ms; /* Para Safari y Chrome antiguos */
+-moz-transition-delay: 1480ms;    /* Para Firefox antiguos */
+-ms-transition-delay: 1480ms;     /* Para Internet Explorer */
+-o-transition-delay: 1480ms;  
   }
   .menu-icon:checked ~ .nav ul li:nth-child(3){
     transition-delay: 1560ms;
+    -webkit-transition-delay: 1560ms; /* Para Safari y Chrome antiguos */
+-moz-transition-delay: 1560ms;   /* Para Firefox antiguos */
+-ms-transition-delay: 1560ms;     /* Para Internet Explorer */
+-o-transition-delay: 1560ms;  
   }
   .menu-icon:checked ~ .nav ul li:nth-child(4){
     transition-delay: 1640ms;
+    -webkit-transition-delay: 1640ms; /* Para Safari y Chrome antiguos */
+-moz-transition-delay: 1640ms;  /* Para Firefox antiguos */
+-ms-transition-delay: 1640ms;   /* Para Internet Explorer */
+-o-transition-delay:1640ms;
   }
   
   
