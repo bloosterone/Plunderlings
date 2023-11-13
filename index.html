@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/pauseplay.css">
-    <link rel="stylesheet" href="css/section_imagenes.css">
-    <link rel="stylesheet" href="css/section_faq.css">
-    <link rel="stylesheet" href="css/section_contacto.css">
-
+    <link href="/css/index.css" rel="preload" as="style">
+    <link rel="preload" as="video" href="img/video.mp4">
+    <link rel="preload" as="imagen" href="img/index.webp">
+    <link rel="preload" as="imagen" href="img/index2.webp">
+    <link rel="preload" as="imagen" href="img/index3.webp">
+    <link rel="preload" as="imagen" href="img/index4.webp">
+    <meta name="description" content="Explore a Caribbean-inspired fantasy world with Plunderlings, where pirate adventurers redefine 'monsters' with emotions, dreams, and a unique perspective. Join us as we expand this imaginative universe ">
+    <meta name="keywords" content="Plunderlings, Toys, Plunderplanet, animation, stopmotion, Actionfigures, plunderverse">
     <script src="https://kit.fontawesome.com/42dbfd4b42.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">   
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">   
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">  
     <title>Plunderlings</title>
 </head>
@@ -30,7 +30,7 @@
                     </div>	
                 </div>
                 
-                <div class="contenedor_img"><img src="img/logo.png" alt="Logo"></div>
+                <div class="contenedor_img"><img src="img/logo.webp" alt="Logo"></div>
                 
                     <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
   	                <label for="menu-icon"></label>
@@ -52,9 +52,9 @@
        
         <aside class="_social-links">
             <ul class="_links-list">
-                <li class="_social-link"><a href="https://twitter.com/plunderlings" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                <li class="_social-link"><a href="http://facebook.com/plunderlings" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                <li class="_social-link"><a href="https://www.instagram.com/plunderlings/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="_social-link"><a href="https://twitter.com/plunderlings" aria-label="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="_social-link"><a href="http://facebook.com/plunderlings" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="_social-link"><a href="https://www.instagram.com/plunderlings/" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
             
         </aside>
@@ -71,7 +71,7 @@
                         <div class="contenedor_inicio">
                         
                             <div class="contenedor_inicio_img">
-                                <img src="img/index.png" alt=""> 
+                                <img src="img/index.webp" alt="News1"> 
                             </div>
                             <div class="contenedor_h3_img">   
                                 
@@ -95,7 +95,7 @@
                         <div class="contenedor_inicio">
                         
                             <div class="contenedor_inicio_img">
-                                <img src="img/index2.jpg" alt=""> 
+                                <img src="img/index2.webp" alt="News2"> 
                             </div>
                             <div class="contenedor_h3_img">   
                                 
@@ -120,7 +120,7 @@
                     <div class="contenedor_inicio">
                     
                         <div class="contenedor_inicio_img">
-                            <img src="img/index3.jpg" alt=""> 
+                            <img src="img/index3.webp" alt="News3"> 
                         </div>
                         <div class="contenedor_h3_img">   
                             
@@ -144,7 +144,7 @@
                     <div class="contenedor_inicio">
                     
                         <div class="contenedor_inicio_img">
-                            <img src="img/index4.jpg" alt=""> 
+                            <img src="img/index4.webp" alt="News4"> 
                         </div>
                         <div class="contenedor_h3_img">   
                             
@@ -177,13 +177,13 @@
                     <div class="section_img ">
                         <div class="section__container-imagenes">
                             <div class="imagenesA">
-                                <img id="miImagen" src="../img/la1.jpg" alt="Mi imagen" >
+                                <img id="miImagen" src="../img/la1.webp" alt="Mi imagen" >
                             </div>
                             <div class="imagenesB">
                                 <div class="imagenesB_title"><h1 id="mi-h1">Plunderstrong Captain BlacJak</h1></div>
                                 <div class="imagenesB_subtitle">
-                                    <h3>- BY LONE COCONUT -  </h3>
-                                    <h4>BRAND PLUNDERLINGS</h4>
+                                    <h2>- BY LONE COCONUT -  </h2>
+                                    <h3>BRAND PLUNDERLINGS</h3>
                                 </div>
                                 <div class="imagenesB_button">
                                     <button id="botonRedireccionar" class="button-49" role="button">BUY ON BBTS</button>
@@ -248,7 +248,7 @@
                     <div class="contenedor_tituloMenu2"><p>FAQ</p></div>
                     <div class="contenedor_faq">
                         <div class="contenedor_faq-img">
-                            <img src="img/faq.jpg" alt="faq">
+                            <img src="img/faq.webp" loading="lazy"  alt="faq">
                         </div>
                         <div class="capita">
                             <div class="capita_titulo"><h1> Frequently Asked Questions</h1></div>
@@ -320,6 +320,13 @@
     </video>
     
     <div class="capa"></div>
+
+    <link rel="stylesheet" href="css/index.css" media="all">
+    <link rel="stylesheet" href="css/menu.css" media="all">
+    <link rel="stylesheet" href="css/pauseplay.css" media="all">
+    <link rel="stylesheet" href="css/section_imagenes.css" media="all" defer>
+    <link rel="stylesheet" href="css/section_faq.css" media="all" defer>
+    <link rel="stylesheet" href="css/section_contacto.css" media="all" defer>
 </body>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -360,5 +367,5 @@
 </script>
 <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 <script src="js/index.js"></script>
-<script src="js/imagenes.js"></script>
+<script async src="js/imagenes.js"></script>
 </html>

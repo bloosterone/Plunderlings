@@ -1,7 +1,7 @@
 
 
- @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
- @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+ @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext&display=swap');
 
 
  .contenedor_section-img{
@@ -130,7 +130,7 @@ box-sizing: border-box;
 	font-size: 16px;
 	line-height: 30px;
  }
- .imagenesB_subtitle h4{
+ .imagenesB_subtitle h3{
  
   
   text-align: center;
@@ -414,7 +414,7 @@ a {
   box-sizing: border-box;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background-image: url('../img/la1.jpg');
+  background-image: url('../img/la1.webp');
   animation: border-transform 6s linear infinite alternate forwards;
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
@@ -430,77 +430,77 @@ a {
 }
 
  .checkbox2.scnd{
-   background-image: url('../img/la2.jpg');
+   background-image: url('../img/la2.webp');
    
  }
  .checkbox2.thrd{
-   background-image: url('../img/la3.jpg');
+   background-image: url('../img/la3.webp');
  }
  .checkbox2.foth{
-   background-image: url('../img/la4.jpg');
+   background-image: url('../img/la4.webp');
  }
  .checkbox2.cinco{
-  background-image: url('../img/la5.jpg');
+  background-image: url('../img/la5.webp');
 }
 .checkbox2.seis {
-  background-image: url('../img/la6.jpg');
+  background-image: url('../img/la6.webp');
 }
 .checkbox2.siete{
-  background-image: url('../img/la7.jpg');
+  background-image: url('../img/la7.webp');
 }
 .checkbox2.ocho{
-  background-image: url('../img/la8.jpg');
+  background-image: url('../img/la8.webp');
 }
 .checkbox2.nueve {
-  background-image: url('../img/la9.jpg');
+  background-image: url('../img/la9.webp');
 }
 
 .checkbox2.diez {
-  background-image: url('../img/la10.jpg');
+  background-image: url('../img/la10.webp');
 }
 
 .checkbox2.once {
-  background-image: url('../img/la11.jpg');
+  background-image: url('../img/la11.webp');
 }
 
 .checkbox2.doce {
-  background-image: url('../img/la12.jpg');
+  background-image: url('../img/la12.webp');
 }
 
 .checkbox2.trece {
-  background-image: url('../img/la13.jpg');
+  background-image: url('../img/la13.webp');
 }
 
 .checkbox2.catorce {
-  background-image: url('../img/la14.jpg');
+  background-image: url('../img/la14.webp');
 }
 
 .checkbox2.quince {
-  background-image: url('../img/la15.jpg');
+  background-image: url('../img/la15.webp');
 }
 
 .checkbox2.dieciseis {
-  background-image: url('../img/la16.jpg');
+  background-image: url('../img/la16.webp');
 }
 
 .checkbox2.diecisiete {
-  background-image: url('../img/la17.jpg');
+  background-image: url('../img/la17.webp');
 }
 
 .checkbox2.dieciocho {
-  background-image: url('../img/la18.jpg');
+  background-image: url('../img/la18.webp');
 }
 
 .checkbox2.diecinueve {
-  background-image: url('../img/la19.jpg');
+  background-image: url('../img/la19.webp');
 }
 
 .checkbox2.veinte {
-  background-image: url('../img/la20.jpg');
+  background-image: url('../img/la20.webp');
 }
 
 .checkbox2.veintiuno {
-  background-image: url('../img/la21.jpg');
+  background-image: url('../img/la21.webp');
 }
 
  

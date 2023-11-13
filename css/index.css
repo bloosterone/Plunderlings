@@ -1,6 +1,3 @@
-:root {
-	/* --bgcolor: rgb(2, 0, 36); */
-}
 
 *{
     margin: 0;
@@ -353,7 +350,7 @@ color: #ececee;
     /* outline: 3px dashed red; */
     position: absolute;
     bottom: 0;
-    background-image: url(../img/wave.png);
+    background-image: url(../img/wave.webp);
     border-radius: 40px;
     display: flex;
     justify-content: center;
