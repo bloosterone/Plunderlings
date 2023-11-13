@@ -11,6 +11,7 @@
     min-width: 350px;
     max-width: 754px;
     height: 80%;
+    min-height: 350px;
     outline: 1px solid black;
     display: flex;
     position: relative;
@@ -111,13 +112,13 @@ height: 100%;
   @media screen and (max-width: 1312px) {
    .capita_titulo h1{
       
-        font-size: 2em;
+        font-size: 1.8em;
         line-height: 30px;
    }
    .capita_subtitulo1{
      
      
-      margin-top: 10%;
+      margin-top: 7%;
       
         font-size: .8em;
         line-height: 1.5em;
@@ -140,7 +141,7 @@ height: 100%;
       .capita_subtitulo1{
         
         
-         margin-top: 10%;
+         margin-top: 7%;
          
            font-size: .6em;
            line-height: 1.2em;

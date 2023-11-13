@@ -11,12 +11,12 @@
     margin-top: 100px;
     max-width: 730px;
     height: 60%;
-    min-width: 380px;
-    min-height: 365px;
+    min-width: 350px;
+    min-height: 325px;
     background-color: #1f2029;
     border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
 }
@@ -138,7 +138,7 @@ background-color: #f2f6f8;
     font-size: 1.1rem;
     color: #838788;
     position: relative;
-    top: -10;
+    
     
   }
   #formMessage:focus {
@@ -317,6 +317,17 @@ background-color: #f2f6f8;
     #formName::placeholder{
          font-size: .7rem;
     }
+    #formMessage{
+        padding: 8px;
+    }
+    #formMessage::placeholder {
+        
+        font-size: .7rem;
+        
+        
+        
+        
+      }
     .about_title h1{
         
             font-size: 1.2rem;
