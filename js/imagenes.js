@@ -8,7 +8,7 @@ const menu_img2 = document.querySelectorAll(".checkbox2");
 // Obtén todos los elementos que deseas poner a la escucha
  // Reemplaza "tuClase" con la clase que deseas seleccionar
  let miH1 = document.getElementById("mi-h1");
- let link = "https://www.bigbadtoystore.com/Product/VariationDetails/201295?o=4";
+ let link = "https://raw.githubusercontent.com/bloosterone/Plunderlings/main/bd.json";
  botonRedireccionar.addEventListener('click', () => {
 	// Redirige la nueva ventana a la URL deseada
 	window.location.href = link;
