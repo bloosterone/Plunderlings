@@ -3,14 +3,16 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     position: relative;
 }
 .contenedor_form{
     width: 70%;
+    margin-top: 100px;
     max-width: 730px;
     height: 60%;
-    min-width: 535px;
+    min-width: 380px;
+    min-height: 365px;
     background-color: #1f2029;
     border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -32,17 +34,11 @@
     border-left: 1px solid #ccc;
     
 }
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    height: auto;
-}
+
 .form-title{
     width: 90%;
     height: 20%;
-    font-family: 'Poppins', sans-serif;
+    
     font-weight: 400;
     
     display: flex;
@@ -55,9 +51,19 @@ form{
 		color: #fff;
 		font-size: 2rem;
 }
+#miFormulario{
+    height: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
 .form-group{
     width: 90%;
     height: 20%;
+    max-height: 35px;
     /* outline: 3px solid green; */
     border-radius: 2rem;
     border: none;
@@ -68,12 +74,13 @@ form{
     justify-content: start;
     align-items: center;
     padding-left: 10px;
-    margin-top: 20px;
+    
     
 }
 #formName{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    border-radius: 2rem;
     color: #212529;
     font-size: 1.1rem;
     width: 80%;
@@ -82,6 +89,7 @@ form{
     border: none;
     position: relative;
     left: 10px;
+    height: 100%;
 }
 #formName::placeholder {
     font-family: 'Poppins', sans-serif;
@@ -89,6 +97,7 @@ form{
     font-size: 1.1rem;
     color: #838788;
     position: relative;
+
     
   }
   #formName:focus{
@@ -101,9 +110,15 @@ form{
     color: #57565c;
 }
 .message{
+    width: 90%;
     height: 30%;
-    padding: 10px;
+    
+    /* outline: 3px solid green; */
     border-radius: 1rem;
+    border: none;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+    background-color: #f2f6f8;
+    padding-left: 12px;
 }
 #formMessage{
 width: 100%;
@@ -132,13 +147,15 @@ background-color: #f2f6f8;
     
   }
  .form_button{
-    margin-top: 10%;
+   height: 30%;
+   max-width: 120px;
+      max-height: 66px;
  }
 
  
  .about_title{
     width: 90%;
-    height: 20%;
+    height: 15%;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     
@@ -155,8 +172,8 @@ background-color: #f2f6f8;
 }
 .about_subtitle{
     width: 90%;
-    height: 80%;
-    padding-bottom: 10px;
+    height: 85%;
+   
 
     display: flex;
     flex-direction: column;
@@ -167,7 +184,157 @@ background-color: #f2f6f8;
     margin-top: 10px;
     font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: .6em;
+  font-size: .58em;
   color: #ccc;
 
 }
+
+.button-48:hover{
+    cursor: pointer;
+   }
+  /* CSS */
+  .button-48,
+  .button-48:after {
+    
+      height: 100%;
+      min-height: 40px;
+    
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+      font-size: 16px;
+    background: linear-gradient(45deg, transparent 5%, #ed1c5b 5%);
+    border: 0;
+    color: #fff;
+    line-height: 30px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-48:after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'ALTERNATE TEXT';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #ed1c5b 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+  }
+  
+  .button-48:hover:after {
+    animation: 1s glitch2;
+    animation-timing-function: steps(2, end);
+    
+  }
+  
+  @keyframes glitch2 {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+
+
+
+
+
+@media screen and (max-width: 816px) {
+    .mitad{
+        
+        padding: 0px;
+    }
+    .form-title h1{
+       
+            font-size: 1.2rem;
+    }
+    .form-group{
+        width: 90%;
+        height: 12%;
+        
+        
+    }
+    #formName{
+       
+        color: #212529;
+        font-size: .5rem;
+        width: 80%;
+        
+    }
+    #formName::placeholder{
+         font-size: .7rem;
+    }
+    .about_title h1{
+        
+            font-size: 1.2rem;
+    }
+    .about_subtitle p{
+       
+        
+      font-weight: 400;
+      font-size: 0.45em;
+      
+    
+    }
+    .about_title{
+        height: 20%;
+    }
+    .d-block{
+        width: 10%;
+       
+    }
+    
+  }

@@ -7,13 +7,16 @@
     position: relative;
  }
  .contenedor_faq{
-    width: 50%;
-    min-width: 410px;
+    width: 100%;
+    min-width: 350px;
+    max-width: 754px;
     height: 80%;
     outline: 1px solid black;
     display: flex;
     position: relative;
     flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
     /* background: linear-gradient(180deg, rgba(249,249,255,1) 0%, rgba(40,40,40,1) 100%);  */
     border-radius: 40px;
 /* Shadow 2 */
@@ -128,5 +131,28 @@ height: 100%;
         line-height: 15px;
    }
     }
+    @media screen and (max-width: 456px) {
+      .capita_titulo h1{
+         
+           font-size: 1.5em;
+           line-height: 30px;
+      }
+      .capita_subtitulo1{
+        
+        
+         margin-top: 10%;
+         
+           font-size: .6em;
+           line-height: 1.2em;
+      }
+      .capita_subtituloR{
+         
+         margin-top: 2%;
+         
+         
+           font-size: .6em;
+           line-height: 15px;
+      }
+       }
 
  
