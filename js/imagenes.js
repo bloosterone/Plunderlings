@@ -41,7 +41,7 @@ function handleClick(event, index) {
 		 link = `${imagenSeleccionada.link}`;
 		const botonRedireccionar = document.getElementById('botonRedireccionar');
 	  miH1.textContent = `${imagenSeleccionada.titulo}`;
-	  $("#miImagen").css('transition', 'all 3s ease-in-out').attr("src",rutadeimg );
+	  $("#lazy-load").attr("src",rutadeimg );
 	  console.log(link);
 	  botonRedireccionar.addEventListener('click', () => {
 		
