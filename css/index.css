@@ -499,6 +499,7 @@ color: #ececee;
    }
    
    .section__container-menu4{
+    border: 1px solid #ed1c5b;
     width: 80%;
     min-width: 300px;
     height: 80%;
