@@ -34,6 +34,9 @@
 color: #ececee;
   
 }
+.contenedor_tituloMenu2 p::first-letter {
+  color: #ed1c5b;
+}
  .contenedor_flechas2{
   width: 100%;
   height: 60px;

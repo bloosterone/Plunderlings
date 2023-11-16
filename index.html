@@ -24,6 +24,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">   
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">  
+
+
+
+
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+
     <title>Plunderlings</title>
 </head>
 <body>
@@ -86,7 +95,7 @@
 
                     </div>
                     <div class="mitades_dos">
-                        <div class="contenedor_tituloMenu-Inicio"><p>NEWS!</p></div>
+                        <div class="contenedor_tituloMenu-Inicio"><p>NEWS</p></div>
                         <div class="section__container-menu3">
                                 <div class="puntos puntos_izq">
                                     <a class="flecha" href="#"><span class="punto arrow left seleccionado"></span></a>
@@ -224,7 +233,11 @@
                     <div class="section_img ">
                         <div class="section__container-imagenes">
                             <div class="imagenesA">
-                                <img id="miImagen" src="../img/la1.webp" alt="Mi imagen" loading="lazy">
+                                <!-- <img id="miImagen" src="../img/la1.webp" alt="Mi imagen" loading="lazy"> -->
+                               <div id="aSide">
+                                <model-viewer src="../assets/scene.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="../assets/scene.gltf" loading="lazy">
+                                </model-viewer>
+                             </div>
                             </div>
                             <div class="imagenesB">
                                 <div class="imagenesB_title"><h1 id="mi-h1">Plunderstrong Captain BlacJak</h1></div>
