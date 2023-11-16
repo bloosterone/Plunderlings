@@ -172,7 +172,7 @@ aside{
 ._social-links {
 	position: fixed;
 	right: 0;
-	top: 50%;
+	top: 34%;
 	transform: translatey(-50%);
 	padding: 1em 0.5em 1em 1em;
 	background: #fafafa;
@@ -284,6 +284,21 @@ section{
    
    
 }
+.contenedor_tituloMenu-Inicio{
+    width: 300px;
+    height: 60;
+    /* outline: 1px dashed black; */
+   text-align: center;
+   
+  letter-spacing: 0.10em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5vh;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #ececee;
+   
+}
 
 .contenedor_tituloMenu p{
     text-align: center;
@@ -296,27 +311,128 @@ section{
 color: #ececee;
     
 }
-.menu__contenedor-grande{
-    width:400%; 
-    /* outline: 1px solid red; */
-    padding: 10px 0 0 0;
+
+.contenedor_mitades{
+    width: 100%;
+    height: 100%;
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
-  height: 80%;
+}
+.mitades_uno{
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor_letras{
+    width: 100%;
+    height: 60%;
+  
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+   
+    
+}
+.contenedor-titulo__sub{
+    /* outline: 1px black dashed; */
+    width: 100%;
+    text-align: center;
+    
+} 
+.typed{
+   
+}
+.letras{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    line-height: 50px;
+    font-weight: 600;
+    /* background: conic-gradient(from 162.22deg at 48.75% 6.95%, #6DF4F4 0deg, #9F2BFB 148.13deg, #F2EBAB 180deg, #FF5EEF 270deg, #FF5EEF 360deg); */
+    background-image: linear-gradient(to left, #ed1c5b, #f12b69, #f43977, #f74585, #f95092, #f967a9, #f77cbd, #f590cf, #efb0e7, #edcdf6, #f1e7fe, #ffffff);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-style: normal;
+   
+}
+
+.mitades_dos{
+    width: 50%;
+    height: 100%;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.section__container-menu3{
+  
+    width: 100%;
+    max-width: 750px;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    
+   }
+   
+   .section__container-menu4{
+    width: 80%;
+    min-width: 300px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    position: relative;
+     overflow: hidden;
+     z-index: 09;
+     /* background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 24px, transparent 24px) 0% 0%/30px 30px no-repeat, radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 24px, transparent 24px) 100% 0%/30px 30px no-repeat, radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 24px, transparent 24px) 0% 100%/30px 30px no-repeat, radial-gradient(circle at 0 0, #ffffff 0, #ffffff 24px, transparent 24px) 100% 100%/30px 30px no-repeat, linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 12px) calc(100% - 60px) no-repeat, linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 60px) calc(100% - 12px) no-repeat, linear-gradient(0deg, transparent 0%, #ed1c5b 100%); */
+ 
+   }
+
+.menu__contenedor-grande{
+    width:400%; 
+    /* outline: 1px solid red; */
+    height: 100%;
+    position: absolute;
+    min-height: 245px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  
     transition: transform 1s ease-in-out;
     -webkit-transition: transform 1s ease-in-out;
     -moz-transition: transform 1s ease-in-out;
-    position: absolute;
-    left: 0;
+    
+    
+   
 }
 .contenedor__grande-imgs{
     width: calc(400% / 4);
+    height: 100%;
+    
     display: flex;
-   min-width: 237px;
-    justify-content: space-around;
-    margin-left: 04%;
-    margin-right: 04%;
+    flex-direction: row;
+  align-content: center;
+   align-items: center;
+    justify-content: space-evenly;
+    
+     padding:10px;
+   
     
 }   
 .contenedor_inicio{
@@ -325,7 +441,7 @@ color: #ececee;
     max-width: 500px;
     
     /* outline: 1px dashed black; */
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -387,16 +503,7 @@ color: #ececee;
     justify-content: space-around;
 }
 /* -------------------flechas------------ */
-.contenedor_flechas{
-    width: calc(100%)   ;
-    max-width: 700px;
-    height: 60px;
-    
-    position:absolute;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-}
+
 .arrow {
 	--arrow-size: 3em;
 	--arrow-color: rgb(255,255,255);
@@ -469,7 +576,50 @@ a {
 	}
 }
 
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 916px) {
+
+    .contenedor_mitades{
+        
+        flex-direction: column;
+        
+    }
+    .mitades_uno{
+        width: 100%;
+        height: 20%;
+    }
+    .mitades_dos{
+        width: 100%;
+        height: 70%;
+        justify-content: end;
+    }
+    .letras{
+        font-size: 1em;
+        line-height: 10px;
+        font-weight: 600;
+    }
+    .contenedor_tituloMenu-Inicio{
+      font-size: 4vh;
+      font-weight: 800;
+    }
+    .contenedor_h3_img{
+        height: 450px;
+    }
+    .contenedor_h3_titulos{
+       
+        /* outline: 1px solid black; */
+       height: 80px;
+        
+        
+    }
+    .section__container-menu4{
+        
+        height: 95%;
+       max-width: 404px;
+        
+        
+       }
+    
+
     .contenedor_img{
         width: 50%;
         
