@@ -240,8 +240,20 @@
                                 <!-- <model-viewer camera-controls touch-action="pan-y" alt="A 3D model of a sphere" src="../assets/scene.gltf">
                                 </model-viewer> -->
 
-                                <model-viewer id="reveal" loading="eager" camera-controls touch-action="pan-y" auto-rotate poster="../assets/scene.gltf" src="../assets/scene.gltf" shadow-intensity="1" alt="A 3D model of a shishkebab"></model-viewer>
-                             </div>
+                                <!-- <model-viewer id="reveal" loading="eager" camera-controls touch-action="pan-y" auto-rotate poster="../assets/scene.gltf" src="../assets/scene.gltf" shadow-intensity="1" alt="A 3D model of a shishkebab"></model-viewer> -->
+                                <model-viewer id="lazy-load" camera-controls touch-action="pan-y" reveal="manual" src="../assets/scene.gltf" alt="A 3D model of a damaged helmet">
+                                    <div id="lazy-load-poster" slot="poster"></div>
+                                    <div id="button-load" slot="poster">Load 3D Model</div>
+                                  </model-viewer>
+                                  
+                                  <script>
+                                    document.querySelector('#button-load').addEventListener('click',
+                                      () => document.querySelector('#lazy-load').dismissPoster());
+                                  </script>
+                            
+                            
+                            
+                            </div>
                             </div>
                             <div class="imagenesB">
                                 <div class="imagenesB_title"><h1 id="mi-h1">Plunderstrong Captain BlacJak</h1></div>
