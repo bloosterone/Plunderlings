@@ -2,13 +2,13 @@
     "imagenes": [
       {
         "titulo": "Plunderstrong Iron Man",
-        "ruta": "../img/la1.webp",
-        "link": "https://cdn.glitch.global/782cfc80-69e3-4c43-848a-a786f47f7981/ironman.glb?v=1700165816197"
+        "ruta": "https://cdn.glitch.global/782cfc80-69e3-4c43-848a-a786f47f7981/ironman.glb?v=1700165816197",
+        "link": "https://www.bigbadtoystore.com/Product/VariationDetails/201295?o=4"
       },
       {
         "titulo": "Plunderstrong Hulk",
-        "ruta": "../img/la2.webp",
-        "link": "https://cdn.glitch.global/782cfc80-69e3-4c43-848a-a786f47f7981/hulk.glb?v=1700169011543"
+        "ruta": "https://cdn.glitch.global/782cfc80-69e3-4c43-848a-a786f47f7981/hulk.glb?v=1700169011543",
+        "link": "https://www.bigbadtoystore.com/Product/VariationDetails/199773?o=4"
         
       },
       {
