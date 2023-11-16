@@ -241,15 +241,13 @@
                                 </model-viewer> -->
 
                                 <!-- <model-viewer id="reveal" loading="eager" camera-controls touch-action="pan-y" auto-rotate poster="../assets/scene.gltf" src="../assets/scene.gltf" shadow-intensity="1" alt="A 3D model of a shishkebab"></model-viewer> -->
-                                <model-viewer id="lazy-load" camera-controls touch-action="pan-y" reveal="manual" src="https://raw.githubusercontent.com/bloosterone/Plunderlings/main/assets/scene.gltf" alt="A 3D model of a damaged helmet">
-                                    <div id="lazy-load-poster" slot="poster"></div>
-                                    <div id="button-load" slot="poster">Load 3D Model</div>
-                                  </model-viewer>
+                                <model-viewer src="assets/ironman.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="img/poster-3.webp" shadow-intensity="1" camera-orbit="361.2deg 83.94deg 59.38m" field-of-view="30deg" auto-rotate>
+                                    <div class="progress-bar hide" slot="progress-bar">
+                                        <div class="update-bar"></div>
+                                    </div>
+                                </model-viewer>
                                   
-                                  <script>
-                                    document.querySelector('#button-load').addEventListener('click',
-                                      () => document.querySelector('#lazy-load').dismissPoster());
-                                  </script>
+                                  
                             
                             
                             
