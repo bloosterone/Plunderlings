@@ -29,8 +29,7 @@
 
 
 
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
 
 
     <title>Plunderlings</title>
@@ -235,7 +234,10 @@
                             <div class="imagenesA">
                                 <!-- <img id="miImagen" src="../img/la1.webp" alt="Mi imagen" loading="lazy"> -->
                                <div id="aSide">
-                                <model-viewer src="../assets/scene.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="../assets/scene.gltf" loading="lazy">
+                                <!-- <model-viewer src="../assets/scene.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="../assets/scene.gltf" loading="lazy">
+                                </model-viewer> -->
+                                
+                                <model-viewer camera-controls touch-action="pan-y" alt="A 3D model of a sphere" src="../assets/scene.gltf">
                                 </model-viewer>
                              </div>
                             </div>
