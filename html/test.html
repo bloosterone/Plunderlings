@@ -11,50 +11,133 @@
   body{
     width: 100%;
     height: 100vh;
+    outline: 1px solid black;
+    overflow: hidden;
+
+  }
+  .contenedor__menu{
+    width: 100%;
+    height: 100vh;
+    outline: 3px solid black;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor__menu-titulo{
+    width: 100%;
+    height: 10vh;
+    outline: 3px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .contenedor__menu-titulo H1{
+    color: #fff;
+    
+  }
+  .contenedor__menu-modelos{
+    width: 100%;
+    height: 90vh;
+    outline: 3px solid green;
+    display: flex;
+    flex-direction: row;
+  }
+  .contenedor__menu-modelosA{
+    width: 40%;
+    height: 90vh;
+    outline: 3px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+   
+  }
+  .contenedor__menu-modelosB{
+    width: 60%;
+    height: 90vh;
+    outline: 3px solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .slider {
+    width: 100%;
+    height: 50%;
+    z-index: 3;
+    outline: 3px solid pink;
+  }
+  .slides {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+  }
+  #uno{
+    margin-top: 10px;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+   
+    position: relative;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    z-index: 9;
+  }
+  .slide {
+   background-color: transparent;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    z-index: 11;
+  }
+  
+  #uno img{
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    object-fit: contain;
+    transform: scale(1.6);
+    
   }
   :not(:defined) > * {
     display: none;
   }
-
-  model-viewer {
-    background-color: #eee;
-    overflow-x: hidden;
+  .background{
     width: 100%;
     height: 100vh;
-  }
-
-  #ar-button {
-    background-image: url(../../assets/ic_view_in_ar_new_googblue_48dp.png);
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    background-position: 12px 50%;
-    background-color: #fff;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    bottom: 132px;
-    padding: 0px 16px 0px 40px;
-    font-family: Roboto Regular, Helvetica Neue, sans-serif;
-    font-size: 14px;
-    color:#4285f4;
-    height: 36px;
-    line-height: 36px;
-    border-radius: 18px;
-    border: 1px solid #DADCE0;
+    
+    z-index: -10;
+  }
+  .background img{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: fill;
+  }
+  model-viewer {
+    background-color: transparent;
+    outline: 1px solid black;
+    z-index: 2;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 100px;
   }
 
-  #ar-button:active {
-    background-color: #E8EAED;
-  }
-
-  #ar-button:focus {
-    outline: none;
-  }
-
-  #ar-button:focus-visible {
-    outline: 1px solid #4285f4;
-  }
+  
 
   @keyframes circle {
     from { transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg); }
@@ -68,7 +151,7 @@
 
   model-viewer > #ar-prompt {
     position: absolute;
-    left: 50%;
+    
     bottom: 175px;
     animation: elongate 2s infinite ease-in-out alternate;
     display: none;
@@ -94,40 +177,17 @@
     display: block;
   }
 
-  .slider {
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-    position: absolute;
-    bottom: 16px;
-  }
+  
 
-  .slides {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .slide {
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    width: 100px;
-    height: 100px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #fff;
-    margin-right: 10px;
-    border-radius: 10px;
-    border: none;
-    display: flex;
-  }
+  
+  
 
   .slide.selected {
     border: 2px solid #4285f4;
+  
+    
   }
+
 
   .slide:focus {
     outline: none;
@@ -141,41 +201,81 @@
     </style>
 </head>
 <body>
+    <div class="contenedor__menu">
+      <div class="background">
+        <img src="../img/beach.png" alt="">
+      </div>
 
-    <model-viewer src="../assets/ironman.glb" poster="../../assets/ShopifyModels/Chair.webp" shadow-intensity="1" ar camera-controls touch-action="pan-y" alt="A 3D model carousel">
-  
-        <button slot="ar-button" id="ar-button">
-          View in your space
-        </button>
-      
-        <div id="ar-prompt">
-          <img src="../../assets/hand.png">
+      <div class="contenedor__menu-titulo">
+          <h1>PLAYER SELECT</h1>
+      </div>
+      <div class="contenedor__menu-modelos">
+        <div class="contenedor__menu-modelosA">
+          <model-viewer src="../assets/ironman.glb" poster="../assets/ironman.webp" shadow-intensity="1" ar camera-controls  touch-action="pan-y" alt="A 3D model carousel">
+    
+            <button slot="ar-button" id="ar-button">
+              View in your space
+            </button>
+          
+            <div id="ar-prompt">
+              <img src="../assets/hulk.glb">
+            </div>
+          
+            <button id="ar-failure">
+              AR is not tracking!
+            </button>
+          
+           
+          </model-viewer>
         </div>
-      
-        <button id="ar-failure">
-          AR is not tracking!
-        </button>
-      
-        <div class="slider">
-          <div class="slides">
-            <button class="slide selected" onclick="switchSrc(this, 'ironman')" style="background-image: url('../../assets/ShopifyModels/Chair.webp');">
-      
-            </button><button class="slide" onclick="switchSrc(this, 'hulk')" style="background-image: url('../../assets/ShopifyModels/Mixer.webp');">
-      
-            </button><button class="slide" onclick="switchSrc(this, 'GeoPlanter')" style="background-image: url('../../assets/ShopifyModels/GeoPlanter.webp');">
-            
-            </button><button class="slide" onclick="switchSrc(this, 'ToyTrain')" style="background-image: url('../../assets/ShopifyModels/ToyTrain.webp');">
-            
-            </button><button class="slide" onclick="switchSrc(this, 'Canoe')" style="background-image: url('../../assets/ShopifyModels/Canoe.webp');">    
-          </button></div>
+        <div class="contenedor__menu-modelosB">
+          <div class="slider">
+            <div class="slides">
+                <div id="uno">
+                  <button  class="slide selected" onclick="switchSrc(this, 'ironman')"> </button>
+                  <img src="../assets/ironman.webp" alt="">
+                </div>
+                <div id="uno">
+                  <button class="slide" onclick="switchSrc(this, 'hulk')" ></button>
+
+                  <img src="../assets/hulk.webp" alt="">
+                </div>
+                <div id="uno">
+                  <button class="slide" onclick="switchSrc(this, 'king_kong')"></button>
+
+                  <img src="../assets/king_kong.webp" alt="">
+                </div>
+                <div id="uno">
+                  <button class="slide" onclick="switchSrc(this, 'batman')"></button>
+
+                  <img src="../assets/batman.webp" alt="">
+                </div>
+                
+                
+              
+              
+        
+              
+              
+            </div>
+          </div>
         </div>
-      </model-viewer>
+        
+      </div>
+
+
+      
+      
+        
+    </div>
+    
       
       <script type="module">
         const modelViewer = document.querySelector("model-viewer");
       
         window.switchSrc = (element, name) => {
           const base = "../assets/" + name;
+          console.log(base);
           modelViewer.src = base + '.glb';
           modelViewer.poster = base + '.webp';
           const slides = document.querySelectorAll(".slide");
